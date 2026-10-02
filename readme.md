@@ -14,13 +14,10 @@ Almost every neighbouring list indexes software agents that read papers, write c
 
 **Not what you're looking for?**
 
-<!--lint disable double-link-->
+- Agents that read papers, write code and run analyses: Awesome-Agent-Scientists.
+- Physical AI for science more broadly, including robotics, lab automation and data tooling: awesome-physical-ai-for-science.
 
-- Agents that read papers, write code and run analyses: [Awesome-Agent-Scientists](https://github.com/AgenticScience/Awesome-Agent-Scientists#readme).
-- LLM-driven self-driving labs graded on a five-level autonomy scale: [awesome-llm-self-driving-labs](https://github.com/Jianguo99/awesome-llm-self-driving-labs#readme).
-- Physical AI for science more broadly, including robotics, lab automation and data tooling: [awesome-physical-ai-for-science](https://github.com/labclaw/awesome-physical-ai-for-science#readme).
-
-<!--lint enable double-link-->
+Both are linked under [Related Lists](#related-lists).
 
 ## Contents
 
@@ -157,16 +154,11 @@ Closed-loop autonomy predates language agents, and depends on far more than an L
 
 ## Related Lists
 
-<!--lint disable double-link-->
-
-- [awesome-llm-self-driving-labs](https://github.com/Jianguo99/awesome-llm-self-driving-labs#readme) - LLM-powered self-driving labs, benchmarks and surveys, organised around a five-level autonomy scale; the closest neighbour to this list.
 - [awesome-physical-ai-for-science](https://github.com/labclaw/awesome-physical-ai-for-science#readme) - Resources where robotics, lab automation and AI agents converge on scientific discovery.
 - [Awesome-Agent-Scientists](https://github.com/AgenticScience/Awesome-Agent-Scientists#readme) - Autonomous scientific discovery agents, centred on computational rather than physical work.
 - [awesome-llm-agents-scientific-discovery](https://github.com/zhoujieli/awesome-llm-agents-scientific-discovery#readme) - LLM-powered agents in biomedical research, centred on literature and analysis.
 - [awesome-autoresearch](https://github.com/alvinreal/awesome-autoresearch#readme) - Autonomous research systems and self-improving software loops.
 - [awesome-lab](https://github.com/seifip/awesome-lab#readme) - Electronic lab notebooks, information management systems and laboratory tooling.
-
-<!--lint enable double-link-->
 
 ## Contributing
 

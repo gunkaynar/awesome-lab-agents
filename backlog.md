@@ -27,7 +27,7 @@ Real leads that have not been traced to primary sources. Nothing here belongs in
 
 ## Leads from awesome-llm-self-driving-labs
 
-Taken as listed in [Jianguo99/awesome-llm-self-driving-labs](https://github.com/Jianguo99/awesome-llm-self-driving-labs) on 1 October 2026. Links are theirs and have not been checked here; hardware execution has not been confirmed for any of them.
+Taken as listed in Jianguo99/awesome-llm-self-driving-labs (https://github.com/Jianguo99/awesome-llm-self-driving-labs) on 1 October 2026. That list was later removed from this list's Related Lists as unmaintained (8 commits, created 4 July 2026, untouched since 6 July 2026); the leads are kept here so their provenance survives. Links are theirs and have not been checked here; hardware execution has not been confirmed for any of them.
 
 - LAP: An Agent-to-Instrument Protocol for Autonomous Science (arXiv 2606.03755).
 - Multi-Agent Systems for Autonomous Laboratory Instrument Operation (Zeiss Research Microscopy Solutions) — linked as a PDF at naterthought.com.
@@ -43,4 +43,4 @@ Taken as listed in [Jianguo99/awesome-llm-self-driving-labs](https://github.com/
 
 ## Do not re-add
 
-- AccelerationConsortium/awesome-self-driving-labs — the repository 404s and the AccelerationConsortium organization no longer lists it (checked 2 October 2026). Only a February 2024 Zenodo snapshot (v0.3.0, doi:10.5281/zenodo.10650664) and an unmaintained copy (sgbaird-alt/awesome-self-driving-labs, last pushed May 2023) remain; both fail the no-unmaintained-items rule.
+- AccelerationConsortium/awesome-self-driving-labs — the repository 404s and the AccelerationConsortium organization no longer lists it (checked 2 October 2026). Only a February 2024 Zenodo snapshot (v0.3.0, doi:10.5281/zenodo.10650664) and unmaintained copies such as sgbaird-alt/awesome-self-driving-labs remain; both fail the no-unmaintained-items rule.
