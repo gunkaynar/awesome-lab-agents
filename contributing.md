@@ -64,13 +64,17 @@ Badge URL format: `https://img.shields.io/badge/<TAG>-<COLOR>` (use `--` to esca
 
 ### The Closed-Loop test
 
-All three must hold, confirmed from the methods or results section rather than the abstract:
+All three must hold:
 
-1. The system selected the next experiments itself, either the agent directly or an optimiser that the agent configured and runs.
+1. The system selected its next experiments itself. The agent layer must be inside the selection loop: it performs the selection, or it configures and runs the optimiser that does. An agent that only offers a natural-language front end to an optimisation loop that would run without it does not count. Delegating the arithmetic to a Bayesian optimiser that the agent builds and runs is fine.
 2. The selection used results from physical experiments it had just run.
 3. This happened across several rounds, with no human choosing between rounds.
 
-It does not cover optimisation over previously collected datasets, a single multi-step workflow run on hardware, or iterating toward a goal within one task such as aligning a crystal or conditioning a tip. Entries whose full text is not openly accessible do not carry the tag.
+It does not cover optimisation over previously collected datasets, a single multi-step workflow run on hardware, iterating toward a goal within one task such as aligning a crystal or conditioning a tip, or process control that adjusts operating conditions rather than choosing experiments.
+
+Apply the tag when the best available evidence establishes all three, at whatever level of the paper supplies it (title, abstract, figure legends, methods or results), and say in your pull request which level that was. Read beyond the abstract when an abstract sentence is ambiguous about whether the optimisation was physical. Leave the tag off when the accessible evidence does not establish it.
+
+Boundary case for reference: k-agents carries the tag. Humans write its natural-language transition rules, but the agents judge each experiment's result and choose the next stage across hours of unattended operation, which sits closer to in than out.
 
 ## Sorting
 
