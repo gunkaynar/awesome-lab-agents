@@ -43,3 +43,5 @@ From [Jianguo99/awesome-llm-self-driving-labs](https://github.com/Jianguo99/awes
 ## Notes
 
 - AccelerationConsortium/awesome-self-driving-labs is no longer available on GitHub. A snapshot is archived on Zenodo (v0.3.0, doi:10.5281/zenodo.10650664), and an earlier copy is at sgbaird-alt/awesome-self-driving-labs.
+- Model Hardware Standard — add a [code] link when the specification is open-sourced. The Vendor-Reported tag stays until a paper or independent verification of its capability claims appears; open-sourcing alone does not remove it.
+- CMU Cloud Lab — the entry links CMU's 2021 announcement because no facility page currently resolves (cloudlab.cmu.edu does not resolve; CMU's AI Science Foundry page describes a 15,000 sq ft Biological and Chemical Innovation Cloud Lab with 80 major instruments). Replace the link and add facility figures once a canonical page is confirmed.

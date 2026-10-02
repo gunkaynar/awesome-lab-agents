@@ -57,6 +57,7 @@ Company (purple, `8250df`): `Cloud-Lab`, `Company`.
 Evidence (orange, `bc4c00`):
 
 - `Preprint` — the linked version has not appeared at a confirmed venue
+- `Vendor-Reported` — the only source for the system's capability claims is the vendor's own announcement or its launch partners' statements, with no paper, preprint or independent verification. It ranks below `Preprint` on the evidence ladder (peer-reviewed, then `Preprint`, then `Vendor-Reported`), and comes off only when a paper or independent verification appears; releasing code alone does not remove it.
 - `Simulation-Only` — evaluated on simulated laboratories rather than real hardware
 - `Partial-Hardware` — decisions made in simulation or digital twins, with only part of the work run on real hardware
 
