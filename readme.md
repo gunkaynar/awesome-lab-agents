@@ -15,9 +15,10 @@ Almost every neighbouring list indexes software agents that read papers, write c
 **Not what you're looking for?**
 
 - Agents that read papers, write code and run analyses: Awesome-Agent-Scientists.
+- Closed loops whose experiments are training runs, benchmarks or code changes rather than physical experiments: awesome-autoresearch.
 - Physical AI for science more broadly, including robotics, lab automation and data tooling: awesome-physical-ai-for-science.
 
-Both are linked under [Related Lists](#related-lists).
+All three are linked under [Related Lists](#related-lists).
 
 ## Contents
 
