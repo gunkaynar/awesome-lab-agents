@@ -17,13 +17,13 @@ If you only want to suggest a paper, open an issue using the **Paper Submission*
 Every entry is a single list item: date, tags, short name linked to the primary paper, a one-sentence description, then the citation.
 
 ```markdown
-- \[YYYY-MM\] `tag1` `tag2` [Name](paper-url) - One-sentence description. Surname et al., "Title," Venue YYYY. [code](url)
+- \[YYYY-MM\] ![Tag1](badge-url) ![Tag2](badge-url) [Name](paper-url) - One-sentence description. Surname et al., "Title," Venue YYYY. [code](url)
 ```
 
 Rules:
 
 - **Date**: `\[YYYY-MM\]` is the date the linked version was first published online (the posting date of version 1 for preprints). Code-only entries use the month the repository was created. If the date cannot be confirmed from a primary source, leave it out; undated entries go at the end of their section.
-- **Tags**: inline code spans from the taxonomy below: 1–3 type and domain tags, then any evidence tags that apply.
+- **Tags**: shields.io badges from the taxonomy below: 1–3 type and domain tags, then any evidence tags that apply.
 - **Name**: the system's short name, linked to the primary paper (or to the repository for code-only entries).
 - **Description**: one sentence, starting with a capital letter and ending with a dot. Say what the system does, with at most one number and no marketing language. Keep factual caveats, such as simulation-only evaluation or partial code release.
 - **Citation**: first author's surname (`et al.` for more than three authors), title in quotes, venue and year. For preprints use `arXiv YYYY` or `bioRxiv YYYY`.
@@ -33,32 +33,44 @@ Rules:
 Example:
 
 ```markdown
-- \[2023-12\] `llm-agent` `chemistry` [Coscientist](https://doi.org/10.1038/s41586-023-06792-0) - GPT-4 system that reads hardware documentation and writes code to run experiments, performing Suzuki and Sonogashira couplings on a liquid handler and HPLC runs in the Emerald Cloud Lab. Boiko et al., "Autonomous chemical research with large language models," Nature 2023. [code](https://github.com/gomesgroup/coscientist)
+- \[2023-12\] ![LLM-Agent](https://img.shields.io/badge/LLM--Agent-1f6feb) ![Chemistry](https://img.shields.io/badge/Chemistry-2da44e) [Coscientist](https://doi.org/10.1038/s41586-023-06792-0) - GPT-4 system that reads hardware documentation and writes code to run experiments, performing Suzuki and Sonogashira couplings on a liquid handler and HPLC runs in the Emerald Cloud Lab, with reaction optimisation benchmarked on previously collected condition-space datasets. Boiko et al., "Autonomous chemical research with large language models," Nature 2023. [code](https://github.com/gomesgroup/coscientist)
 ```
 
 ## Tag taxonomy
 
-Type:
+Type (blue, `1f6feb`):
 
-- `multi-agent` — system coordinates several agents
-- `llm-agent` — a single language or vision-language model agent with tools
-- `closed-loop` — the agent chooses the next round of experiments across several rounds
-- `benchmark` — evaluation suite or dataset
-- `simulator` — simulated laboratory or digital twin
-- `framework` — reusable codebase, SDK or protocol language
-- `mcp` — Model Context Protocol server for instruments
-- `survey` — review, survey or perspective
-- `platform` — lab operating system or hosted platform
+- `Multi-Agent` — system coordinates several agents
+- `LLM-Agent` — a single language or vision-language model agent with tools
+- `Closed-Loop` — see the test below
+- `Benchmark` — evaluation suite or dataset
+- `Simulator` — simulated laboratory or digital twin
+- `Framework` — reusable codebase, SDK or protocol language
+- `MCP` — Model Context Protocol server for instruments
+- `Survey` — review, survey or perspective
+- `Platform` — lab operating system or hosted platform
 
-Domain (pick when relevant): `chemistry`, `materials`, `biology`, `liquid-handling`, `microscopy`, `synchrotron`, `quantum`, `optics`, `safety`.
+Domain (green, `2da44e`), pick when relevant: `Chemistry`, `Materials`, `Biology`, `Liquid-Handling`, `Microscopy`, `Synchrotron`, `Quantum`, `Optics`, `Safety`.
 
-Company: `cloud-lab`, `company`.
+Company (purple, `8250df`): `Cloud-Lab`, `Company`.
 
-Evidence:
+Evidence (orange, `bc4c00`):
 
-- `preprint` — the linked version has not appeared at a confirmed venue
-- `simulation-only` — evaluated on simulated laboratories rather than real hardware
-- `partial-hardware` — decisions made in simulation or digital twins, with only part of the work run on real hardware
+- `Preprint` — the linked version has not appeared at a confirmed venue
+- `Simulation-Only` — evaluated on simulated laboratories rather than real hardware
+- `Partial-Hardware` — decisions made in simulation or digital twins, with only part of the work run on real hardware
+
+Badge URL format: `https://img.shields.io/badge/<TAG>-<COLOR>` (use `--` to escape literal hyphens, e.g. `Multi--Agent`).
+
+### The Closed-Loop test
+
+All three must hold, confirmed from the methods or results section rather than the abstract:
+
+1. The system selected the next experiments itself, either the agent directly or an optimiser that the agent configured and runs.
+2. The selection used results from physical experiments it had just run.
+3. This happened across several rounds, with no human choosing between rounds.
+
+It does not cover optimisation over previously collected datasets, a single multi-step workflow run on hardware, or iterating toward a goal within one task such as aligning a crystal or conditioning a tip. Entries whose full text is not openly accessible do not carry the tag.
 
 ## Sorting
 
