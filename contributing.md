@@ -14,52 +14,55 @@ If you only want to suggest a paper, open an issue using the **Paper Submission*
 
 ## Entry format
 
-Every entry is a single list item:
+Every entry is a single list item: date, tags, short name linked to the primary paper, a one-sentence description, then the citation.
 
 ```markdown
-- \[YYYY-MM\] ![tag1] ![tag2] "Title." Authors. Venue YYYY. [paper](url) | [code](url) | [project](url)
+- \[YYYY-MM\] `tag1` `tag2` [Name](paper-url) - One-sentence description. Surname et al., "Title," Venue YYYY. [code](url)
 ```
 
 Rules:
 
-- **Date**: `\[YYYY-MM\]` for the first public release (preprint date is fine). Use the first public code release for code-only entries. The brackets are escaped so the date is not read as a link.
-- **Tags**: 1–3 shields.io badges from the taxonomy below, type tags first.
-- **Title**: in double quotes, ending with a period inside the quotes. If the title does not name the system, add the name in parentheses, e.g. `"Augmenting large language models with chemistry tools (ChemCrow)."`
-- **Authors**: `First Last et al.` for more than three authors.
-- **Venue**: journal or conference plus year (e.g. `Nature 2023`). For preprints use `arXiv YYYY` or `bioRxiv YYYY`.
-- **Links**: `[paper]` is required when a paper exists. Add `[code]`, `[project]`, `[blog]` or `[package]` as available, separated by ` | `. Code-only entries use `"Name" (code-only release).`
+- **Date**: `\[YYYY-MM\]` is the date the linked version was first published online (the posting date of version 1 for preprints). Code-only entries use the month the repository was created. If the date cannot be confirmed from a primary source, leave it out; undated entries go at the end of their section.
+- **Tags**: inline code spans from the taxonomy below: 1–3 type and domain tags, then any evidence tags that apply.
+- **Name**: the system's short name, linked to the primary paper (or to the repository for code-only entries).
+- **Description**: one sentence, starting with a capital letter and ending with a dot. Say what the system does, with at most one number and no marketing language. Keep factual caveats, such as simulation-only evaluation or partial code release.
+- **Citation**: first author's surname (`et al.` for more than three authors), title in quotes, venue and year. For preprints use `arXiv YYYY` or `bioRxiv YYYY`.
+- **Links**: add `[code]`, `[project]`, `[blog]`, `[package]` or `[correction]` after the citation as available. Code-only entries have no citation.
+- **Sources**: take authors, dates, venues and numbers from the paper, the publisher's page or the repository itself, not from secondary lists.
 
 Example:
 
 ```markdown
-- \[2023-12\] ![LLM-Agent](https://img.shields.io/badge/LLM--Agent-1f6feb) ![Chemistry](https://img.shields.io/badge/Chemistry-2da44e) "Autonomous chemical research with large language models (Coscientist)." Daniil A. Boiko et al. Nature 2023. [paper](https://doi.org/10.1038/s41586-023-06792-0) | [code](https://github.com/gomesgroup/coscientist)
+- \[2023-12\] `llm-agent` `closed-loop` `chemistry` [Coscientist](https://doi.org/10.1038/s41586-023-06792-0) - GPT-4 system that searches documentation, writes and executes code, and runs experiments on automated hardware. Boiko et al., "Autonomous chemical research with large language models," Nature 2023. [code](https://github.com/gomesgroup/coscientist)
 ```
 
 ## Tag taxonomy
 
-Type tags (blue, `1f6feb`):
+Type:
 
-- `Multi-Agent` — system coordinates several agents
-- `LLM-Agent` — a single language or vision-language model agent with tools
-- `Closed-Loop` — the agent chooses the next round of experiments across several rounds
-- `Benchmark` — evaluation suite, dataset or comparative study
-- `Simulator` — simulated laboratory or digital twin
-- `Framework` — reusable codebase, SDK or protocol language
-- `MCP` — Model Context Protocol server for instruments
-- `Survey` — review, survey or perspective
-- `Platform` — lab operating system or hosted platform
+- `multi-agent` — system coordinates several agents
+- `llm-agent` — a single language or vision-language model agent with tools
+- `closed-loop` — the agent chooses the next round of experiments across several rounds
+- `benchmark` — evaluation suite or dataset
+- `simulator` — simulated laboratory or digital twin
+- `framework` — reusable codebase, SDK or protocol language
+- `mcp` — Model Context Protocol server for instruments
+- `survey` — review, survey or perspective
+- `platform` — lab operating system or hosted platform
 
-Domain tags (green, `2da44e`) — pick when relevant:
+Domain (pick when relevant): `chemistry`, `materials`, `biology`, `liquid-handling`, `microscopy`, `synchrotron`, `quantum`, `optics`, `safety`.
 
-- `Chemistry`, `Materials`, `Biology`, `Liquid-Handling`, `Microscopy`, `Synchrotron`, `Quantum`, `Optics`, `Safety`
+Company: `cloud-lab`, `company`.
 
-Company tags (purple, `8250df`): `Cloud-Lab`, `Company`.
+Evidence:
 
-Badge URL format: `https://img.shields.io/badge/<TAG>-<COLOR>` (use `--` to escape literal hyphens, e.g. `Multi--Agent`).
+- `preprint` — the linked version has not appeared at a confirmed venue
+- `simulation-only` — evaluated on simulated laboratories rather than real hardware
+- `partial-hardware` — decisions made in simulation or digital twins, with only part of the work run on real hardware
 
 ## Sorting
 
-Within each section, entries are sorted **reverse-chronologically by `YYYY-MM`**.
+Within each section, entries are sorted **reverse-chronologically by `YYYY-MM`**, with undated entries last.
 
 ## Section choice
 
@@ -80,7 +83,8 @@ If unsure, suggest a section in your pull request and a maintainer will help.
 
 - [ ] Entry follows the format template above
 - [ ] Date is correct (`YYYY-MM`, first public release)
-- [ ] Tags chosen from the taxonomy
+- [ ] Tags chosen from the taxonomy, including evidence tags
+- [ ] Authors, date, venue and any numbers checked against the primary source
 - [ ] Placed in the correct section, in chronological order
 - [ ] All links resolve (try them in a private window)
 - [ ] No duplicate of an existing entry
