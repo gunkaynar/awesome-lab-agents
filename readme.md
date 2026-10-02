@@ -2,17 +2,17 @@
 
 > A curated list of AI agents that operate physical laboratories.
 
+<!--lint disable double-link-->
+
 Almost every neighbouring list indexes software agents that read papers, write code and produce manuscripts. This list is only about agents whose actions move matter: an AI agent, driven by an LLM, VLM or foundation model with some planning or decision-making autonomy, connected to real laboratory hardware, with that connection demonstrated on actual hardware. That covers closed-loop design, execute, measure and redesign systems, agents whose protocols then run on real instruments even behind a human approval gate, instrument copilots that genuinely drive hardware, cloud-lab agents where execution is physical but offsite, and XR-mediated systems where the agent perceives and acts on the bench. Out of scope are dry-lab-only AI-scientist pipelines, in-silico chemistry agents with no hardware link, classical self-driving labs with no agentic decision layer, simulation-only embodied agents, and LIMS, ELNs and generic automation SDKs except as the substrate agents act through.
 
 **Borderline rulings**, written down so the same argument does not recur in every pull request:
 
-| Case | Ruling | Why |
-|---|---|---|
-| The Virtual Lab (AI agents designed SARS-CoV-2 nanobodies, Nature 646:716–723, 2025) | Out | Agents designed; humans ran the wet-lab validation. The agent never touched hardware. |
-| LUMI-lab | In, with a note | Closed-loop and physical, but the decision layer is a pretrained foundation model plus active learning, not an agentic LLM. |
-| ChemCrow | Background only | 18 expert tools, no hardware link. The single most common miscategorisation in neighbouring lists. |
-| From Prompts to Protocols | In, marked ⚠️ | Real orchestration-system integration, but evaluated on three simulated labs. |
-| A-Lab (2023) | Background only | ML plus active learning, no agentic decision layer. Always linked alongside its correction. |
+- **The Virtual Lab** (AI agents designed SARS-CoV-2 nanobodies, Nature 646:716–723, 2025): out. Agents designed; humans ran the wet-lab validation. The agent never touched hardware.
+- **LUMI-lab**: in, with a note. Closed-loop and physical, but the decision layer is a pretrained foundation model plus active learning, not an agentic LLM.
+- **ChemCrow**: Background only. 18 expert tools, no hardware link. The single most common miscategorisation in neighbouring lists.
+- **From Prompts to Protocols**: in, marked ⚠️. Real orchestration-system integration, but evaluated on three simulated labs.
+- **A-Lab** (2023): Background only. ML plus active learning, no agentic decision layer. Always linked alongside its correction.
 
 **Not what you're looking for?**
 
@@ -22,6 +22,7 @@ Almost every neighbouring list indexes software agents that read papers, write c
 
 ## Contents
 
+- [Emoji Key](#emoji-key)
 - [Agents](#agents)
   - [Chemistry and Materials](#chemistry-and-materials)
   - [Biology and Life Sciences](#biology-and-life-sciences)
@@ -31,8 +32,9 @@ Almost every neighbouring list indexes software agents that read papers, write c
 - [Critical Reading](#critical-reading)
 - [Surveys](#surveys)
 - [Background](#background)
+- [Organizations](#organizations)
 
-### Emoji Key
+## Emoji Key
 
 - 🔁 Closed-loop — the agent selects the next round of experiments across multiple rounds, without a human deciding between rounds.
 - 📄 Peer-reviewed publication. Absence means preprint or technical report.
@@ -128,12 +130,26 @@ Almost every neighbouring list indexes software agents that read papers, write c
 
 Closed-loop autonomy predates language agents, and depends on far more than an LLM. The [A-Lab](https://doi.org/10.1038/s41586-023-06734-w) combined robotics, ab-initio databases, text-mined synthesis heuristics and active learning over 17 days of continuous operation — read it alongside its [correction](https://doi.org/10.1038/s41586-025-09992-y). Earlier still, the [mobile robotic chemist](https://doi.org/10.1038/s41586-020-2442-2) ran a batched Bayesian photocatalysis search with a free-roaming robot, [AlphaFlow](https://doi.org/10.1038/s41467-023-37139-y) applied reinforcement learning to a self-driven fluidic lab, and [delocalized closed-loop discovery of organic laser emitters](https://doi.org/10.1126/science.adk9227) distributed a campaign across institutions. [ChemCrow](https://doi.org/10.1038/s42256-024-00832-8) belongs here rather than above: 18 expert chemistry tools, no hardware link.
 
+## Organizations
+
+*Claims made by companies about their own systems are rarely independently verifiable.*
+
+- [Ginkgo Bioworks](https://www.ginkgobioworks.com/) - Cloud laboratory built on reconfigurable automation carts; the execution substrate in the GPT-5 protein synthesis work, and the only entry here with both a linked preprint and a product derived from an agent-run campaign.
+- [Lila Sciences](https://www.lila.ai/) - Autonomous laboratories across life, chemical and materials sciences, where agents determine and vary thin-film sputtering recipes.
+- [Periodic Labs](https://periodic.com/) - AI scientists paired with autonomous labs, with a first facility built around powder synthesis.
+- [Radical AI](https://www.radical-ai.com/) - Full-stack materials discovery moving from AI-guided manual synthesis toward robotic high-throughput.
+- [Emerald Cloud Lab](https://www.emeraldcloudlab.com/) - Remote laboratory execution accessible to external agents; the cloud lab Coscientist ran against.
+
+## Related Lists
+
+- [awesome-llm-self-driving-labs](https://github.com/Jianguo99/awesome-llm-self-driving-labs#readme) - LLM-powered self-driving labs, benchmarks and surveys, organised around a five-level autonomy scale; the closest neighbour to this list.
+- [awesome-physical-ai-for-science](https://github.com/labclaw/awesome-physical-ai-for-science#readme) - Resources where robotics, lab automation and AI agents converge on scientific discovery.
+- [Awesome-Agent-Scientists](https://github.com/AgenticScience/Awesome-Agent-Scientists#readme) - Autonomous scientific discovery agents, centred on computational rather than physical work.
+- [awesome-llm-agents-scientific-discovery](https://github.com/zhoujieli/awesome-llm-agents-scientific-discovery#readme) - LLM-powered agents in biomedical research, centred on literature and analysis.
+- [awesome-autoresearch](https://github.com/alvinreal/awesome-autoresearch#readme) - Autonomous research systems and self-improving software loops.
+- [awesome-lab](https://github.com/seifip/awesome-lab#readme) - Electronic lab notebooks, information management systems and laboratory tooling.
+
 ## Contributing
 
 Contributions are welcome. Read the [contribution guidelines](contributing.md) first.
 
-## License
-
-[![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
-
-To the extent possible under law, the contributors have waived all copyright and related or neighbouring rights to this work.
