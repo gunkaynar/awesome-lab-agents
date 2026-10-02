@@ -1,0 +1,27 @@
+name: lint
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "readme.md"
+      - "contributing.md"
+      - ".github/workflows/awesome-lint.yml"
+  pull_request:
+    paths:
+      - "readme.md"
+      - "contributing.md"
+      - ".github/workflows/awesome-lint.yml"
+
+jobs:
+  awesome-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run awesome-lint
+        run: npx awesome-lint
