@@ -1,6 +1,5 @@
-# Awesome Lab Agents 
+# Awesome Lab Agents [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Last Commit](https://img.shields.io/github/last-commit/gunkaynar/awesome-lab-agents)](https://github.com/gunkaynar/awesome-lab-agents/commits/main)
