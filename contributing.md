@@ -33,7 +33,7 @@ Rules:
 Example:
 
 ```markdown
-- \[2023-12\] `llm-agent` `closed-loop` `chemistry` [Coscientist](https://doi.org/10.1038/s41586-023-06792-0) - GPT-4 system that searches documentation, writes and executes code, and runs experiments on automated hardware. Boiko et al., "Autonomous chemical research with large language models," Nature 2023. [code](https://github.com/gomesgroup/coscientist)
+- \[2023-12\] `llm-agent` `chemistry` [Coscientist](https://doi.org/10.1038/s41586-023-06792-0) - GPT-4 system that reads hardware documentation and writes code to run experiments, performing Suzuki and Sonogashira couplings on a liquid handler and HPLC runs in the Emerald Cloud Lab. Boiko et al., "Autonomous chemical research with large language models," Nature 2023. [code](https://github.com/gomesgroup/coscientist)
 ```
 
 ## Tag taxonomy
@@ -74,7 +74,7 @@ Within each section, entries are sorted **reverse-chronologically by `YYYY-MM`**
 | 📊 Benchmarks & Simulation | Benchmarks, simulators, digital twins |
 | 🛠️ Lab Tooling | Protocol languages, lab operating systems, SDKs, MCP servers |
 | 📚 Surveys & Perspectives | Reviews and perspectives |
-| 🏛️ Foundations | Earlier autonomous laboratories and tool-using chemistry agents |
+| 🏛️ Foundations | Earlier autonomous laboratories that this work builds on |
 | 🏢 Companies & Cloud Labs | Companies and cloud laboratories |
 
 If unsure, suggest a section in your pull request and a maintainer will help.
