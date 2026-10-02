@@ -16,7 +16,7 @@ Real leads that have not been traced to primary sources. Nothing here belongs in
 - LabVLA (arXiv 2606.13578) — includes a physical Franka transfer study.
 - QCalEval.
 - SAFE-CHEM (arXiv 2608.09303).
-- ARES OS 2.0 (arXiv 2604.03440).
+- ARES OS 2.0 (arXiv 2604.03440) — a software suite to enable laboratory automation and fully closed-loop autonomous research. Code: https://github.com/AFRL-ARES/ARES.
 - PUDA (arXiv 2607.26464).
 - Osprey Framework — the control platform under the Accelerator Assistant.
 - A visual dataset for anomaly detection in self-driving laboratories (Sci. Data 12:1787).
@@ -40,3 +40,7 @@ Taken as listed in [Jianguo99/awesome-llm-self-driving-labs](https://github.com/
 ## Organizations
 
 - Medra (medra.bio) — robotics and AI for autonomous biology. The domain did not resolve on 1 October 2026; find the current site before re-adding.
+
+## Do not re-add
+
+- AccelerationConsortium/awesome-self-driving-labs — the repository 404s and the AccelerationConsortium organization no longer lists it (checked 2 October 2026). Only a February 2024 Zenodo snapshot (v0.3.0, doi:10.5281/zenodo.10650664) and an unmaintained copy (sgbaird-alt/awesome-self-driving-labs, last pushed May 2023) remain; both fail the no-unmaintained-items rule.
