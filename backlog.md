@@ -22,6 +22,7 @@ Candidate entries whose paper, venue or hardware details still need checking. To
 - Agentic AI for autonomous quantum sensing (arXiv 2607.25145).
 - Robot-assisted mapping of chemical reaction hyperspaces (Nature, Sep 2025).
 - LabSuperVision — egocentric laboratory perception benchmark, part of the LabOS paper (arXiv 2510.14861).
+- Large language models do not replace chemists in a closed-loop catalysis experiment. Andrew Ian Cooper, Qi Jie Yeow, Ziheng Xiao, Mengjia Zhu, Abdoulatif Cissé, Xenophon Evangelopoulos and Charlotte Boott. Research Square 2026 (doi:10.21203/rs.3.rs-10032842/v1).
 
 ## Collected from awesome-llm-self-driving-labs
 

@@ -79,7 +79,6 @@ See the [contribution guidelines](contributing.md#tag-taxonomy) for tag definiti
 
 📊 Benchmarks, simulators and digital twins for laboratory agents.
 
-- \[2026-07\] ![Benchmark](https://img.shields.io/badge/Benchmark-1f6feb) ![Chemistry](https://img.shields.io/badge/Chemistry-2da44e) "Large language models do not replace chemists in a closed-loop catalysis experiment." Andrew Ian Cooper et al. Research Square 2026. [paper](https://doi.org/10.21203/rs.3.rs-10032842/v1)
 - \[2026-06\] ![Benchmark](https://img.shields.io/badge/Benchmark-1f6feb) ![Safety](https://img.shields.io/badge/Safety-2da44e) "ABC-Bench: An Agentic Bio-Capabilities Benchmark for Biosecurity." Andrew Bo Liu et al. arXiv 2026. [paper](https://arxiv.org/abs/2606.11150)
 - \[2026-01\] ![Benchmark](https://img.shields.io/badge/Benchmark-1f6feb) ![Safety](https://img.shields.io/badge/Safety-2da44e) "Benchmarking large language models on safety risks in scientific laboratories (LabSafety Bench)." Yujun Zhou et al. Nature Machine Intelligence 2026. [paper](https://doi.org/10.1038/s42256-025-01152-1) | [code](https://github.com/YujunZhou/LabSafety-Bench)
 - \[2025-12\] ![Simulator](https://img.shields.io/badge/Simulator-1f6feb) ![Chemistry](https://img.shields.io/badge/Chemistry-2da44e) "MATTERIX: toward a digital twin for robotics-assisted chemistry laboratory automation." Kourosh Darvish et al. Nature Computational Science 2025. [paper](https://doi.org/10.1038/s43588-025-00924-4) | [code](https://github.com/AccelerationConsortium/Matterix)
