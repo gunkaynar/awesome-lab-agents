@@ -22,7 +22,7 @@ Every entry is a single list item: date, tags, short name linked to the primary 
 
 Rules:
 
-- **Date**: `\[YYYY-MM\]` is the date the linked version was first published online (the posting date of version 1 for preprints). Code-only entries use the month the repository was created. If the date cannot be confirmed from a primary source, leave it out; undated entries go at the end of their section.
+- **Date**: `\[YYYY-MM\]` is the date the linked version was first published online (the posting date of version 1 for preprints). Code-only entries use the month the repository was created. Specifications use the publication date of their current version, as recorded by the standards body. If the date cannot be confirmed from a primary source, leave it out; undated entries go at the end of their section.
 - **Tags**: shields.io badges from the taxonomy below: 1–3 type and domain tags, then any evidence tags that apply.
 - **Name**: the system's short name, linked to the primary paper (or to the repository for code-only entries).
 - **Description**: one sentence, starting with a capital letter and ending with a dot. Say what the system does, with at most one number and no marketing language. Keep factual caveats, such as simulation-only evaluation or partial code release.
