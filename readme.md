@@ -26,6 +26,11 @@ Almost every neighbouring list indexes software agents that read papers, write c
   - [Chemistry and Materials](#chemistry-and-materials)
   - [Biology and Life Sciences](#biology-and-life-sciences)
   - [Instruments and Facilities](#instruments-and-facilities)
+- [Benchmarks, Simulators and Digital Twins](#benchmarks-simulators-and-digital-twins)
+- [Tooling](#tooling)
+- [Critical Reading](#critical-reading)
+- [Surveys](#surveys)
+- [Background](#background)
 
 ### Emoji Key
 
@@ -74,6 +79,54 @@ Almost every neighbouring list indexes software agents that read papers, write c
 - ⚠️ [OPERA](https://arxiv.org/abs/2608.05990) - Frames optical experiments as typed operators with physically interpretable residuals, cutting score-improvement-without-physical-improvement from 23.6–39.0% to 0.9–1.9%. Decisions in digital twins, protocols transferred to three real instruments.
 - [Owl·AuraID](https://arxiv.org/abs/2603.29828) - GUI-native agent that drives instrument software directly rather than through APIs, for hardware that exposes no programmatic interface.
 - ⚠️ [From Prompts to Protocols](https://arxiv.org/abs/2605.16552) - Agent embedded in a laboratory orchestration system over MCP, reporting 97% first-attempt protocol generation across three simulated labs.
+
+## Benchmarks, Simulators and Digital Twins
+
+- 📄 💻 [AFMBench](https://doi.org/10.1038/s41467-025-64105-7) - 100 curated atomic force microscopy tasks that require physical execution on hardware rather than simulated scoring. ([code](https://github.com/M3RG-IITD/AILA))
+- 💻 [LabUtopia](https://github.com/Rui-li023/LabUtopia) - Isaac Sim laboratory simulator and hierarchical benchmark with chemical-reaction modelling, 200+ instrument assets and 30+ tasks across five levels. ([paper](https://arxiv.org/abs/2505.22634))
+- 📄 💻 [MATTERIX](https://doi.org/10.1038/s43588-025-00924-4) - GPU-accelerated digital twin of a chemistry lab simulating manipulation, powders, liquids, heat transfer and reaction kinetics, with sim-to-real transfer. ([code](https://github.com/AccelerationConsortium/Matterix))
+- 💻 [EnvTrace](https://github.com/CFN-softbio/EnvTrace) - Evaluates instrument-control code by aligning execution traces against a beamline digital twin, scoring over 30 LLMs and enabling pre-execution validation of live experiments. ([paper](https://arxiv.org/abs/2511.09964))
+- 📄 💻 [LabSafety Bench](https://doi.org/10.1038/s42256-025-01152-1) - 765 OSHA-aligned questions plus open-ended scenarios, on which no evaluated model exceeded 70% accuracy at hazard identification. ([code](https://github.com/YujunZhou/LabSafety-Bench))
+- [LabSuperVision](https://arxiv.org/abs/2510.14861) - Egocentric laboratory perception benchmark built from over 240 researcher-worn video sessions.
+- [ABC-Bench](https://arxiv.org/abs/2606.11150) - Agentic bio-capabilities benchmark framed for biosecurity evaluation.
+
+## Tooling
+
+- 💻 [PyLabRobot](https://github.com/PyLabRobot/pylabrobot) - Hardware-agnostic SDK running one protocol across Hamilton, Tecan and Opentrons, with chatterbox backends that log commands instead of sending them.
+- 📄 💻 [Uni-Lab-OS](https://github.com/deepmodeling/Uni-Lab-OS) - Operating system for autonomous labs with a dual topology of logical ownership and physical connectivity, reconciling digital state against material motion through transactional rollback. ([paper](https://arxiv.org/abs/2512.21766))
+- 💻 [LeeQ](https://github.com/ShuxiangCao/LeeQ) - Framework for orchestrating, simulating and automating superconducting-qubit experiments.
+- 💻 [plr-mcp](https://github.com/di-omics/plr-mcp) - MCP server exposing a PyLabRobot liquid handler, plate reader, thermocycler and heater-shaker, in simulation by default with one variable to target real hardware.
+- 💻 [LabMCP](https://github.com/K-Dense-AI/lab-instrument-mcps) - MCP servers for real instruments with safety limits, read-only modes, audit trails and a simulator per instrument.
+- 💻 [labmcp-opentrons](https://pypi.org/project/labmcp-opentrons/) - MCP server for Opentrons OT-2 and Flex over the documented HTTP API, with tools tagged read or write. Simulator-tested, not yet hardware-verified.
+- 💻 [OpenLabAI](https://github.com/nygmeta/OpenLabAI) - MCP servers for Opentrons, Hamilton, Biomek and Cellario that give no raw hardware access and never move a robot without explicit per-run approval.
+- 💻 [device-use](https://github.com/labclaw/device-use) - Lets agents operate lab instruments through their existing GUI software, for devices with no API.
+- 💻 [science-jubilee](https://github.com/machineagency/science-jubilee) - Python control for Jubilee motion platforms, a common low-cost substrate in academic self-driving labs.
+- [IvoryOS](https://arxiv.org/abs/2605.03205) - Natural-language closed-loop control of a mobile liquid handler, where an agent built a six-parameter accuracy optimisation over 60 trials with no manual scripting. Documented in a community hackathon report rather than a dedicated paper.
+- 📄 [XDL](https://doi.org/10.1126/science.aav2211) - Chemical description language used as a protocol intermediate representation.
+
+## Critical Reading
+
+*The field's failure modes are as informative as its successes.*
+
+- [Large language models do not replace chemists in a closed-loop catalysis experiment](https://doi.org/10.21203/rs.3.rs-10032842/v1) - GPT-5.1 against human experts over a 528-experiment robotic campaign; in a like-for-like final phase of 160 experiments the humans' formulation was on average more active. Preprint.
+- 📄 [Author Correction: An autonomous laboratory for the accelerated synthesis of inorganic materials](https://doi.org/10.1038/s41586-025-09992-y) - Narrows the original novelty claim to materials new to the prediction platform rather than new to science, and revises the successful-compound count downward.
+- 📄 [Sleepwalking in laboratory agents](https://doi.org/10.1038/s41467-025-64105-7) - Within the AILA paper: agents deviating from instructions and executing unauthorised extra steps on real instruments.
+- [Score-only feedback misleads embodied agents](https://arxiv.org/abs/2608.05990) - Within the OPERA paper: 23.6–39.0% of score-only decisions improved the metric without improving the experiment, against 0.9–1.9% with physically grounded residuals.
+- [Towards Human-Led, Agent-Driven Autonomous Laboratories for the Life Sciences](https://doi.org/10.20944/preprints202608.0273.v1) - Names the reality gap between AI-generated experimental intent and audit-grade wet-lab outcomes. Preprint.
+
+**A note on safety.** This list indexes and classifies published systems, papers and open-source tools. It does not aggregate protocols, reagent specifications or operational parameters: entry descriptions say what a system is, never how to reproduce a hazardous procedure, and biosecurity and laboratory-safety benchmarks are listed by title, venue and purpose only. Safety evaluations are included because no evaluated model yet clears a reliable bar on hazard identification, and anyone wiring an agent to hardware should know that first. Removal requests go through [issues](https://github.com/gunkaynar/awesome-lab-agents/issues).
+
+## Surveys
+
+- [Embodied Science: Closing the Discovery Loop with Agentic Embodied AI](https://arxiv.org/abs/2603.19782) - Argues for exactly the boundary this list draws between computational and physical scientific agency.
+- [Agentic AI for Self-Driving Laboratories in Soft Matter](https://arxiv.org/abs/2601.17920) - Frames laboratory autonomy as an agent-environment problem under expensive actions, delayed feedback and hard safety constraints.
+- [Large Language Models Transform Organic Synthesis](https://arxiv.org/abs/2508.05427) - Source-verified evidence ladder that insists on comparing agentic autonomy against strong non-LLM autonomous baselines.
+- 📄 [Autonomous Chemistry and Materials Innovation Driven by Scientific Agents](https://doi.org/10.1021/jacsau.6c00213) - Five-module framework of comprehension, design, execution, analysis and optimisation for agent-enabled self-driving labs.
+- [From AI for Science to Agentic Science](https://arxiv.org/abs/2508.14111) - Broad survey of autonomous scientific discovery, useful for policing the dry-lab boundary.
+
+## Background
+
+Closed-loop autonomy predates language agents, and depends on far more than an LLM. The [A-Lab](https://doi.org/10.1038/s41586-023-06734-w) combined robotics, ab-initio databases, text-mined synthesis heuristics and active learning over 17 days of continuous operation — read it alongside its [correction](https://doi.org/10.1038/s41586-025-09992-y). Earlier still, the [mobile robotic chemist](https://doi.org/10.1038/s41586-020-2442-2) ran a batched Bayesian photocatalysis search with a free-roaming robot, [AlphaFlow](https://doi.org/10.1038/s41467-023-37139-y) applied reinforcement learning to a self-driven fluidic lab, and [delocalized closed-loop discovery of organic laser emitters](https://doi.org/10.1126/science.adk9227) distributed a campaign across institutions. [ChemCrow](https://doi.org/10.1038/s42256-024-00832-8) belongs here rather than above: 18 expert chemistry tools, no hardware link.
 
 ## Contributing
 
