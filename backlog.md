@@ -4,7 +4,6 @@ Candidate entries whose paper, venue or hardware details still need checking. To
 
 ## Papers and systems
 
-- Chemist-X — retrieval-augmented agent for robotic wet-lab experiments.
 - AI-Chemist (USTC) — the platform underlying ChemAgents.
 - SciVLABench / SciHorizon-elab.
 - AutoBio (arXiv 2505.14030).
@@ -13,7 +12,6 @@ Candidate entries whose paper, venue or hardware details still need checking. To
 - LabVLA (arXiv 2606.13578).
 - QCalEval.
 - SAFE-CHEM (arXiv 2608.09303).
-- ARES OS 2.0 (arXiv 2604.03440) — a software suite to enable laboratory automation and fully closed-loop autonomous research. Code: https://github.com/AFRL-ARES/ARES.
 - PUDA (arXiv 2607.26464).
 - Osprey Framework — the control platform used by the Accelerator Assistant.
 - A visual dataset for anomaly detection in self-driving laboratories (Sci. Data 12:1787).
@@ -35,10 +33,6 @@ From [Jianguo99/awesome-llm-self-driving-labs](https://github.com/Jianguo99/awes
 - The Evolving Role of Programming and LLMs in the Development of Self-Driving Laboratories (Claude-Light, APL Machine Learning; code at jkitchin/claude-light).
 - Expert-Level Protocol Translation for Self-Driving Labs (arXiv 2411.00444).
 - Large Language Models for Porous Materials: From Text Mining to Autonomous Laboratory (Digital Discovery, d5dd00578g).
-
-## Companies
-
-- Medra — robotics and AI for biology. Website to be confirmed.
 
 ## Notes
 
