@@ -6,18 +6,11 @@ Candidate entries whose paper, venue or hardware details still need checking. To
 
 - AI-Chemist (USTC) — the platform underlying ChemAgents.
 - SciVLABench / SciHorizon-elab.
-- AutoBio (arXiv 2505.14030).
 - Chemistry3D (ICRA 2025).
-- Labimus (arXiv 2606.31037).
-- LabVLA (arXiv 2606.13578).
 - QCalEval.
-- SAFE-CHEM (arXiv 2608.09303).
-- PUDA (arXiv 2607.26464).
 - Osprey Framework — the control platform used by the Accelerator Assistant.
 - A visual dataset for anomaly detection in self-driving laboratories (Sci. Data 12:1787).
 - AI-driven robotics for optics (Sci. Adv. 12:eaee1381).
-- A Programmable Optics Cloud Laboratory (arXiv 2609.16413).
-- Agentic AI for autonomous quantum sensing (arXiv 2607.25145).
 - Robot-assisted mapping of chemical reaction hyperspaces (Nature, Sep 2025).
 - LabSuperVision — egocentric laboratory perception benchmark, part of the LabOS paper (arXiv 2510.14861).
 - Large language models do not replace chemists in a closed-loop catalysis experiment. Andrew Ian Cooper, Qi Jie Yeow, Ziheng Xiao, Mengjia Zhu, Abdoulatif Cissé, Xenophon Evangelopoulos and Charlotte Boott. Research Square 2026 (doi:10.21203/rs.3.rs-10032842/v1).
