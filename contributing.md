@@ -42,6 +42,7 @@ Type (blue, `1f6feb`):
 
 - `Multi-Agent` — system coordinates several agents
 - `LLM-Agent` — a single language or vision-language model agent with tools
+- `VLA` — a vision-language-action model that maps observations and instructions directly to robot actions
 - `Closed-Loop` — see the test below
 - `Benchmark` — evaluation suite or dataset
 - `Simulator` — simulated laboratory or digital twin
@@ -57,7 +58,7 @@ Company (purple, `8250df`): `Cloud-Lab`, `Company`.
 Evidence (orange, `bc4c00`):
 
 - `Preprint` — the linked version has not appeared at a confirmed venue
-- `Vendor-Reported` — the only source for the system's capability claims is the vendor's own announcement or its launch partners' statements, with no paper, preprint or independent verification. It ranks below `Preprint` on the evidence ladder (peer-reviewed, then `Preprint`, then `Vendor-Reported`), and comes off only when a paper or independent verification appears; releasing code alone does not remove it.
+- `Self-Reported` — attached to a capability claim, not to an entity: applied where a description makes a capability claim whose only source is the party making it (a vendor, a university describing its own facility, or authors who report no supporting results), with no paper, preprint or independent verification. Identity statements do not get it. It ranks below `Preprint` on the evidence ladder (peer-reviewed, then `Preprint`, then `Self-Reported`), and comes off only when a paper or independent verification appears; releasing code alone does not remove it.
 - `Simulation-Only` — evaluated on simulated laboratories rather than real hardware
 - `Partial-Hardware` — decisions made in simulation or digital twins, with only part of the work run on real hardware
 

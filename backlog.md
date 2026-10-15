@@ -6,8 +6,6 @@ Candidate entries whose paper, venue or hardware details still need checking. To
 
 - AI-Chemist (USTC) — the platform underlying ChemAgents.
 - SciVLABench / SciHorizon-elab.
-- Chemistry3D (ICRA 2025).
-- QCalEval.
 - Osprey Framework — the control platform used by the Accelerator Assistant.
 - A visual dataset for anomaly detection in self-driving laboratories (Sci. Data 12:1787).
 - AI-driven robotics for optics (Sci. Adv. 12:eaee1381).
@@ -30,6 +28,6 @@ From [Jianguo99/awesome-llm-self-driving-labs](https://github.com/Jianguo99/awes
 ## Notes
 
 - AccelerationConsortium/awesome-self-driving-labs is no longer available on GitHub. A snapshot is archived on Zenodo (v0.3.0, doi:10.5281/zenodo.10650664), and an earlier copy is at sgbaird-alt/awesome-self-driving-labs.
-- Model Hardware Standard — add a [code] link when the specification is open-sourced. The Vendor-Reported tag stays until a paper or independent verification of its capability claims appears; open-sourcing alone does not remove it.
+- Model Hardware Standard — add a [code] link when the specification is open-sourced. The Self-Reported tag stays until a paper or independent verification of its capability claims appears; open-sourcing alone does not remove it.
 - CMU cloud labs — the entry links CMU's AI Science Foundry page as primary and the 2021 Emerald Cloud Lab partnership announcement as secondary. The Foundry page describes a "Biological and Chemical Innovation Cloud Lab" (15,000 sq ft, 80 major scientific instruments); the 2021 announcement describes a facility to be built on Emerald Cloud Lab's platform, and CMU's March 2024 page says it "was expected to open later in 2024". The two may describe the same lab with different figures, but the Foundry page does not mention Emerald Cloud Lab, so this could not be confirmed and the entry does not claim it.
 - SiLA 2 — dated by the v1.2 "Official Release 1.2" tag (2026-02-04) in the consortium's sila_base repository. sila-standard.com still offers v1.1 as the current release, so the date is not an error.
