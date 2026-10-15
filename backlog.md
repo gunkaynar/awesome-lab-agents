@@ -17,12 +17,9 @@ Candidate entries whose paper, venue or hardware details still need checking. To
 
 From [Jianguo99/awesome-llm-self-driving-labs](https://github.com/Jianguo99/awesome-llm-self-driving-labs), 1 October 2026.
 
-- LAP: An Agent-to-Instrument Protocol for Autonomous Science (arXiv 2606.03755).
 - Multi-Agent Systems for Autonomous Laboratory Instrument Operation (Zeiss Research Microscopy Solutions).
 - Toward Full Autonomous Laboratory Instrumentation Control with Large Language Models (DOI 10.1002/sstr.202500173).
-- Integrating Domain-Specialized Language Models with AI Measurement Tools for Deterministic Atomic-Resolution Experimentation (arXiv 2602.20669).
 - The Evolving Role of Programming and LLMs in the Development of Self-Driving Laboratories (Claude-Light, APL Machine Learning; code at jkitchin/claude-light).
-- Expert-Level Protocol Translation for Self-Driving Labs (arXiv 2411.00444).
 - Large Language Models for Porous Materials: From Text Mining to Autonomous Laboratory (Digital Discovery, d5dd00578g).
 
 ## Notes
