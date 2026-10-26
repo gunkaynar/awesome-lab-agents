@@ -58,7 +58,7 @@ Company (purple, `8250df`): `Cloud-Lab`, `Company`.
 Evidence (orange, `bc4c00`):
 
 - `Preprint` — the linked version has not appeared at a confirmed venue
-- `Self-Reported` — attached to a capability claim, not to an entity: applied when a claim in the description rests only on the claimant's own statement (a vendor, an institution or the authors), with no reported results supporting it and no independent verification. A paper or preprint exempts the claim only if it reports results for it; a preprint that asserts a capability without results does not. Identity statements do not get the tag. It ranks below `Preprint` on the evidence ladder and comes off only when supporting results or independent verification appear; releasing code alone does not remove it.
+- `Self-Reported` — attached to a capability claim, not to an entity: applied when a claim in the description rests only on the claimant's own statement (a vendor, an institution or the authors), with no reported results supporting it and no independent verification. A paper or preprint exempts the claim only if it reports results for it; a preprint that asserts a capability without results does not. Identity statements do not get the tag. It ranks below `Preprint` on the evidence ladder and comes off only when supporting results or independent verification appear; releasing code alone does not remove it. Self-Reported qualifies every capability tag on its entry, so Closed-Loop together with Self-Reported reads as "described by its authors as closed-loop, with no results reported".
 - `Simulation-Only` — evaluated on simulated laboratories rather than real hardware
 - `Partial-Hardware` — decisions made in simulation or digital twins, with only part of the work run on real hardware
 
@@ -96,6 +96,8 @@ Within each section, entries are sorted **reverse-chronologically by `YYYY-MM`**
 | 🏢 Companies & Cloud Labs | Companies and cloud laboratories |
 
 If unsure, suggest a section in your pull request and a maintainer will help.
+
+A specification belongs in Lab Tooling only once an implementation of it runs on real hardware somewhere: the Model Hardware Standard qualifies through partner deployments (tagged Self-Reported), SiLA 2 and OPC UA through existing implementations, while LAP was removed because it has no implementation yet and returns once its reference implementation runs on an instrument.
 
 ## PR checklist
 

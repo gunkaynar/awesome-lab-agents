@@ -4,23 +4,12 @@ Candidate entries whose paper, venue or hardware details still need checking. To
 
 ## Papers and systems
 
-- AI-Chemist (USTC) — the platform underlying ChemAgents.
-- SciVLABench / SciHorizon-elab.
 - Osprey Framework — the control platform used by the Accelerator Assistant.
 - A visual dataset for anomaly detection in self-driving laboratories (Sci. Data 12:1787).
 - AI-driven robotics for optics (Sci. Adv. 12:eaee1381).
 - Robot-assisted mapping of chemical reaction hyperspaces (Nature, Sep 2025).
 - LabSuperVision — egocentric laboratory perception benchmark, part of the LabOS paper (arXiv 2510.14861).
 - Large language models do not replace chemists in a closed-loop catalysis experiment. Andrew Ian Cooper, Qi Jie Yeow, Ziheng Xiao, Mengjia Zhu, Abdoulatif Cissé, Xenophon Evangelopoulos and Charlotte Boott. Research Square 2026 (doi:10.21203/rs.3.rs-10032842/v1).
-
-## Collected from awesome-llm-self-driving-labs
-
-From [Jianguo99/awesome-llm-self-driving-labs](https://github.com/Jianguo99/awesome-llm-self-driving-labs), 1 October 2026.
-
-- Multi-Agent Systems for Autonomous Laboratory Instrument Operation (Zeiss Research Microscopy Solutions).
-- Toward Full Autonomous Laboratory Instrumentation Control with Large Language Models (DOI 10.1002/sstr.202500173).
-- The Evolving Role of Programming and LLMs in the Development of Self-Driving Laboratories (Claude-Light, APL Machine Learning; code at jkitchin/claude-light).
-- Large Language Models for Porous Materials: From Text Mining to Autonomous Laboratory (Digital Discovery, d5dd00578g).
 
 ## Notes
 
