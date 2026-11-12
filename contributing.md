@@ -44,7 +44,8 @@ Type (blue, `1f6feb`):
 - `LLM-Agent` — a single language or vision-language model agent with tools
 - `VLA` — a vision-language-action model that maps observations and instructions directly to robot actions
 - `Closed-Loop` — see the test below
-- `Benchmark` — evaluation suite or dataset
+- `Benchmark` — evaluation suite with defined tasks and metrics
+- `Dataset` — recorded laboratory data released for training or evaluation, without a defined benchmark protocol
 - `Simulator` — simulated laboratory or digital twin
 - `Framework` — reusable codebase, SDK or protocol language
 - `MCP` — Model Context Protocol server for instruments
