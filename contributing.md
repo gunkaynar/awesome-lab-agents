@@ -99,6 +99,8 @@ If unsure, suggest a section in your pull request and a maintainer will help.
 
 A specification belongs in Lab Tooling only once an implementation of it runs on real hardware somewhere: the Model Hardware Standard qualifies through partner deployments (tagged Self-Reported), SiLA 2 and OPC UA through existing implementations, while LAP was removed because it has no implementation yet and returns once its reference implementation runs on an instrument.
 
+Foundations admits systems without a foundation-model agent only if they are autonomous laboratories: they select their own subsequent experiments from physical results and pass the Closed-Loop test. Robotic automation that runs a predefined design, however large, does not qualify.
+
 ## PR checklist
 
 - [ ] Entry follows the format template above
